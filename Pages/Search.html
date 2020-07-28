@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<script type="text/javascript" src="Files\Includes\body\head.js"></script>
+
+	<style>
+		#myInput{
+			font-size:13px;
+			width:60%;
+			padding: 4px;
+			border-radius: 4px;
+			border: none;
+			margin-bottom: 1px;
+			background: #564d4d;
+			outline: none;
+			color: #ffffff;
+		}
+		input::placeholder {
+			color: #222222;
+		}
+		#myTable{
+			border-collapse:collapse;
+			width:58%;
+			font-size:13px
+		}
+		#myTable td, #myTable th{
+			text-align:left;
+			padding:8px;
+		}
+		#myTable td a
+		}
+		#myTable tr{
+			border-bottom:1px solid #222222;
+		}
+		#myTable thead tr, /* notice the use of thead */
+		#myTable tr:hover {
+			background-color: #db0000 ;
+		}
+		#myTable tbody tr {
+			display: none; /* Hide rows by default */
+		}
+
+		#myTable tbody tr.visible {
+			display: table-row; /* Show them when they match */
+		}
+
+		#myTable tfoot tr:not(.visible) {
+			display: none; /* Hide the "no results" message if not .visible */
+		}
+
+		#myTable tfoot td {
+			text-align: center;
+		}
+		input:focus,
+			select:focus,
+			textarea:focus,
+			button:focus {
+			outline: none;
+		}
+		a{
+			text-decoration: none;}
+		.nounderline a{
+			text-decoration: none;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-dark navbar fixed-top">
+	
+		<div class="container">
+		
+			<a class="navbar-brand" href="Index.html" onClick="window.location.reload();">
+			
+				<img class="logosize" src="https://ma-images-dump.imfast.io/MA%20Images/favicons/apple-icon-144x144.png"/>
+			
+			</a>
+			
+			<input class="my-auto mx-auto" type="text" id="myInput" placeholder="Search"/>
+							
+			<button class="navbar-toggler menubutton" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			
+				<span class="navbar-toggler-icon"></span>
+			
+			</button>
+			
+			<div class="collapse navbar-collapse text-right" id="navbarResponsive">
+			
+				<ul class="navbar-nav ml-auto"><li class="nav-item">
+
+					<li class="nav-item"><a class="nav-link" href="Search.html"><i class="fa fa-search"></i> Search</a></li>
+
+					<li class="nav-item"><a class="nav-link" href="Coming-soon.html">Coming Soon</a></li>
+
+					<li class="nav-item"><a class="nav-link" href="Requests.html">Request a Title</a></li>
+
+					<li class="nav-item"><a class="nav-link" href="Contact.html">Contact us</a></li>
+
+					<li class="nav-item"><a class="nav-link" href="About.html">About us</a></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+		
+	</nav>
+			
+	<div class="container">
+	
+		<div class="col-lg-12 nounderline">
+		
+			<div class="card border-0 custombody">
+			
+				<div class="row">
+
+					<table class="mb-5" id="myTable" align="center"><tbody>
+
+						<tr><td>
+						<a href="Browse\A\adamsmedia.html" class="text-light">Adams Media</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\A\andreaciman.html" class="text-light">Andre Aciman</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\A\andrewroberts.html" class="text-light">Andrew Roberts</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\A\andrzejsapkowski.html" class="text-light">Andrzej Sapkowski</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\A\antoinedesaintexupery.html" class="text-light">Antoine de Saint-Exupéry</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\A\atticuspoetry.html" class="text-light">Atticus Poetry</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\B\beckyalbertalli.html" class="text-light">Becky Albertalli</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\B\bernardcornwell.html" class="text-light">Bernard Cornwell</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\B\biancasparacino.html" class="text-light">Bianca Sparacino</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\B\brandonsanderson.html" class="text-light">Brandon Sanderson</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\C\cassandraclare.html" class="text-light">Cassandra Clare</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\J\jrrtolkien.html" class="text-light">Christopher Tolkien</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\C\colleenhoover.html" class="text-light">Colleen Hoover</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\C\courtneypeppernell.html" class="text-light">Courtney Peppernell</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\D\danbrown.html" class="text-light">Dan Brown</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\D\davidfosterwallace.html" class="text-light">David Foster Wallace</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\D\davidlevithan.html" class="text-light">David Levithan</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\D\davidmccullough.html" class="text-light">David McCullough</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\D\dawnlanuza.html" class="text-light">Dawn Lanuza</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\D\dkpublishing.html" class="text-light">DK Publishing</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\D\doriskearnsgoodwin.html" class="text-light">Doris Kearns Goodwin</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\E\edithhamilton.html" class="text-light">Edith Hamilton</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\E\elockhart.html" class="text-light">E. Lockhart</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\G\georgerrmartin.html" class="text-light">George R.R. Martin</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\G\graphicdesign.html" class="text-light">Graphic Design</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\H\harukimurakami.html" class="text-light">Haruki Murakami</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\H\hollyblack.html" class="text-light">Holly Black</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\J\jamesdashner.html" class="text-light">James Dashner</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\J\jayrubin.html" class="text-light">Jay Rubin</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\J\jennyhan.html" class="text-light">Jenny Han</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\J\jkrowling.html" class="text-light">J.K. Rowling</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\J\johngreen.html" class="text-light">John Green</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\J\jrrtolkien.html" class="text-light">J.R.R. Tolkien</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\K\kevinkwan.html" class="text-light">Kevin Kwan</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\K\khaledhosseini.html" class="text-light">Khaled Hosseini</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\K\kieracass.html" class="text-light">Kiera Cass</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\L\langleav.html" class="text-light">Lang Leav</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\M\markmanson.html" class="text-light">Mark Manson</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\M\megcabot.html" class="text-light">Meg Cabot</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\M\michaelbennett.html" class="text-light">Michael Bennett</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\M\michaelfaudet.html" class="text-light">Michael Faudet</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\M\mitchalbom.html" class="text-light">Mitch Albom</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\P\paulocoelho.html" class="text-light">Paulo Coelho</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\P\pittacuslore.html" class="text-light">Pittacus Lore</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\R\rainbowrowell.html" class="text-light">Rainbow Rowell</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\R\ransomriggs.html" class="text-light">Ransom Riggs</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\R\rebeccaserle.html" class="text-light">Rebecca Serle</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\R\rhondabyrne.html" class="text-light">Rhonda Byrne</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\R\rhsin.html" class="text-light">R.H. Sin</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\R\rickriordan.html" class="text-light">Rick Riordan</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\R\robertgreene.html" class="text-light">Robert Greene</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\R\ronchernow.html" class="text-light">Ron Chernow</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\R\rupikaur.html" class="text-light">Rupi Kaur</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\R\ryanholiday.html" class="text-light">Ryan Holiday</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\M\michaelbennett.html" class="text-light">Sarah Bennett</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\S\sarahjmaas.html" class="text-light">Sarah J. Maas</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\S\sarahknight.html" class="text-light">Sarah Knight</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\S\sherryargov.html" class="text-light">Sherry Argov</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\S\sherrylwoods.html" class="text-light">Sherryl Woods</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\S\sophiekinsella.html" class="text-light">Sophie Kinsella</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\S\stephenking.html" class="text-light">Stephen King</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\S\suzannecollins.html" class="text-light">Suzanne Collins</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\T\taherehmafi.html" class="text-light">Tahereh Mafi</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\T\teaobreht.html" class="text-light">Tea Obreht</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\U\upilechisala.html" class="text-light">Upile Chisala</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\V\veronicaroth.html" class="text-light">Veronica Roth</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\W\walterisaacson.html" class="text-light">Walter Isaacson</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\Y\yokogawa.html" class="text-light">Yōko Ogawa</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\Y\yuvalnoahharari.html" class="text-light">Yuval Noah Harari</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\Various\forwardseries.html" class="text-light">Various Authors</a>
+						</td><td><p hidden></p</td></tr>
+
+						<tr><td>
+						<a href="Browse\A\.html" class="text-light"></a>
+						</td><td><p hidden></p</td></tr>
+
+						<script type="text/javascript" src="Files\Includes\body\search.js"></script>
+						
+						</tbody><tfoot><tr><td colspan="2" class="text-light">The item you're looking for is not yet available.</td></tr>
+					
+					</table>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+	<script src="Files\Includes\js\jquery.min.js"></script>
+	
+	<script src="Files\Includes\js\bootstrap.bundle.min.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		  var $input = document.getElementById("myInput"),
+			  $table = document.getElementById("myTable"),
+			  $$tr   = $table.querySelectorAll("tbody tr"),
+			  $noResults = $table.querySelector("tfoot tr");
+			  
+		  for (var i = 0; i < $$tr.length; i++) {
+			var $$td    = $$tr[i].querySelectorAll("td"),
+				  name    = $$td[0].innerText,
+				country = $$td[1].innerText;
+			$$tr[i].normalizedValue = normalizeStr( name + " " + country );
+		  }
+		  $input.addEventListener("input", performSearch);
+
+		  function performSearch() {
+			var filter = normalizeStr(this.value),
+					resultCount = 0;
+			for (var i = 0; i < $$tr.length; i++) {
+
+			  var isMatch = filter.length > 0 && $$tr[i].normalizedValue.includes(filter);
+			  if (isMatch) { resultCount++; }
+
+			  $$tr[i].classList[isMatch ? "add" : "remove"]("visible");
+			}
+
+			var showNoResultsMessage = resultCount === 0 && filter.length > 0;
+			$noResults.classList[showNoResultsMessage ? "add" : "remove"]("visible");
+		  }
+
+		  function normalizeStr(str) {
+			return (str || '').toUpperCase().trim();
+		  }
+		});
+	</script>
+
+</html>

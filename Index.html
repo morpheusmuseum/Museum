@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	
+	<script type="text/javascript" src="Files/Includes/body/head.js"></script>
+
+</head>
+
+<body>
+
+	<script type="text/javascript" src="Files/Includes/body/mainmenu.js"></script>
+
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="col-lg-8 col-md-12 col-12 sitelinks mt-4">
+				<div class="card border-0 custombody">
+						<h5 class="card-title">What's New?</h5>
+				</div>
+			</div>
+		
+			<div class="col-lg-4 col-md-12 col-12 sitelinks mt-4">
+							
+				<div class="card custombody">
+					<p class="mx-auto mt-2 mb-0 text-center"><small><a href="Pages/Howto.html">How to use this search bar?</small></a></p>
+				
+					<input class="mt-2 mx-auto" type="text" id="myInput" placeholder="Search"/>
+					
+					<table class="mb-3" id="myTable" align="center">
+						<tbody>
+							<script type="text/javascript" src="Files\Includes\body\bookmarksearchbar.js"></script>
+							<script type="text/javascript" src="Files\Includes\body\secretlanguage.js"></script>
+							<script type="text/javascript" src="Files\Includes\body\authorsearchbar.js"></script>
+						</tbody>
+					</table>
+				</div>
+								
+				<div class="card custombody mt-3 mb-3">
+					<p class="mx-auto my-auto"><small>
+					<a href="Pages/Contact.html">Contact us</a>
+					<a href="Pages/About.html">About</a>
+					</small></p>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+  
+</body>
+
+	<script src="Files\Includes\js\jquery.min.js"></script><script src="Files\Includes\js\bootstrap.bundle.min.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		  var $input = document.getElementById("myInput"),
+			  $table = document.getElementById("myTable"),
+			  $$tr   = $table.querySelectorAll("tbody tr"),
+			  $noResults = $table.querySelector("tfoot tr");
+			  
+		  for (var i = 0; i < $$tr.length; i++) {
+			var $$td    = $$tr[i].querySelectorAll("td"),
+				  name    = $$td[0].innerText,
+				country = $$td[1].innerText;
+			$$tr[i].normalizedValue = normalizeStr( name + " " + country );
+		  }
+		  $input.addEventListener("input", performSearch);
+
+		  function performSearch() {
+			if (this.value.length < 3) {
+			for (var i = 0; i < $$tr.length; i++) {
+			$$tr[i].classList["remove"]("visible");
+			} return; 
+			}
+			var filter = normalizeStr(this.value),
+					resultCount = 0;
+			for (var i = 0; i < $$tr.length; i++) {
+
+			  var isMatch = filter.length > 0 && $$tr[i].normalizedValue.includes(filter);
+			  if (isMatch) { resultCount++; }
+
+			  $$tr[i].classList[isMatch ? "add" : "remove"]("visible");
+			}
+
+			var showNoResultsMessage = resultCount === 0 && filter.length > 0;
+			$noResults.classList[showNoResultsMessage ? "add" : "remove"]("visible");
+		  }
+
+		  function normalizeStr(str) {
+			return (str || '').toUpperCase().trim();
+		  }
+		});
+		
+		var mylist = $('#myTable');
+		var listitems = mylist.find('tr');
+		listitems.sort(function(a, b) {
+		   return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase());
+		})
+		$.each(listitems, function(idx, itm) { mylist.append(itm); });
+	</script>
+	
+</html>
